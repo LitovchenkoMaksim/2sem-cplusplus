@@ -1,0 +1,62 @@
+                                                         TASK1
+#include <iostream>
+using namespace std;
+int main(){
+    cout << "Введите два числа и действие\n" << endl;
+    float a = 0;
+    float b = 0;
+    char op = 0;
+    cin >> a >> b >> op;
+    switch(op){
+        case '+':
+            cout << a+b << endl;
+            break;
+        case '-':
+            cout << a-b << endl;
+            break;
+        case '*':
+            cout << a*b << endl;
+            break;
+        case '/':
+            cout << a/b << endl;
+            break;
+        default:
+            cout <<"invalid operation" << endl;
+            break;
+    }
+    return 0;
+}
+                                                           TASK2
+#include <iostream>
+#include "windows.h"
+using namespace std;
+
+int main() {
+    cout << "Введите n"<< endl;
+    int n=0;
+    cin >> n;
+    while(n>0){
+        cout << n << endl;
+        n--;
+        Sleep(1000);
+    }
+    return 0;
+}
+                                                          TASK3
+#include <iostream>
+using namespace std;
+int main() {
+    system("chcp 65001");
+    cout << "Введите число яблок:" << endl;
+    int n = 0;
+    cin >> n;
+    if(n%100>10 and n%100<21)
+        cout<< n << " " <<"яблок"<<endl;
+    else if(n %10 ==0 or n %10 >4)
+        cout<< n << " " <<"яблок"<<endl;
+    else if(n %10 ==1)
+        cout<< n << " " <<"яблоко"<<endl;
+    else if(n %10>1 and n %10<5)
+        cout<< n << " " <<"яблока"<<endl;
+    return 0;
+}
