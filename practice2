@@ -1,0 +1,45 @@
+                                          TASK1
+int task1(){
+    cout<<"press 1 to start"<<endl;
+    int a;
+    cin>>a;
+    if(a==1){
+        cout<<"#include <iostream>\nint main() { \n    std::cout << \"Hello, World!\\n\" << std::endl;\n    return 0;\n}";
+    }
+    else{
+        cout<<"incorrect input";
+    }
+    return 0;
+}
+                                          TASK3
+#include <cmath>
+int task3(){
+    cout<<"input binary number\n";
+    int bin, n, i,decnum;
+    cin>>bin;
+    while(bin!=0){
+        n=bin % 10;
+        if(n!=1 and n!=0){
+            cout<<"it's not a binary number";
+            return -1;
+        }
+        decnum += n * pow(2, i);
+        i++;
+        bin = bin / 10;
+    }
+    cout<< decnum;
+    return 0;
+}
+                                            TASK4
+int task4(){
+    cout<<"input decimal number\n";
+    int decimal;
+    cin>>decimal;
+    string bin;
+    while (decimal>0){
+        bin = to_string(decimal%2) + bin;
+        decimal=decimal/2;
+    }
+    cout<<bin;
+    return 0;
+}                                            
